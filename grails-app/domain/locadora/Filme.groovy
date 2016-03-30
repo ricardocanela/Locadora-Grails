@@ -8,7 +8,7 @@ class Filme {
 	int ano
 	int duracao
 
-	static hasMany = [atores:Ator, diretores:Diretor, idiomaAudio:Idioma, idiomaLegenda:Idioma]
+	static hasMany = [atores:Ator, diretores:Diretor, idiomaAudio:Idioma, idiomaLegenda:Idioma, generos:Genero]
 
 	static mapping = {
 		sinopse sqlType: 'longText'
