@@ -7,6 +7,10 @@ class Ator {
 	static belongsTo = Filme
 	static hasMany = [filmes:Filme]
 
+	String toString(){
+		return nome
+	}
+
     static constraints = {
     }
 }

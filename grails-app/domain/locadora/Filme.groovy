@@ -8,7 +8,7 @@ class Filme {
 	int ano
 	int duracao
 
-	static hasMany = [atores:Ator]
+	static hasMany = [atores:Ator, diretores:Diretor]
 
 	static mapping = {
 		sinopse sqlType: 'longText'
@@ -16,5 +16,6 @@ class Filme {
 
     static constraints = {
     	atores nullable:true
+    	diretores nullable:true
     }
 }
