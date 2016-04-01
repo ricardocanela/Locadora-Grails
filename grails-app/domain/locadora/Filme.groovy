@@ -19,6 +19,9 @@ class Filme {
 	}
 
     static constraints = {
+    	tituloPortugues nullable:false
+    	tituloPortugues unique:true
+    	tituloOriginal unique:true
     	atores nullable:true
     	diretores nullable:true
     	idiomaLegenda nullable:true
